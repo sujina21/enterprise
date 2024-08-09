@@ -1,0 +1,17 @@
+cffi==1.16.0
+comtypes==1.4.4
+numpy==1.23.5
+opencv-contrib-python==4.5.5.64
+pillow==10.3.0
+PyAudio==0.2.14
+pycparser==2.22
+pypiwin32==223
+pyttsx3==2.90
+pywin32==306
+scipy==1.13.1
+sounddevice==0.4.5
+SpeechRecognition==3.8.1
+Babel==2.15.0
+mysql-connector-python==9.0.0
+python-dotenv==1.0.1
+tkcalendar==1.6.1

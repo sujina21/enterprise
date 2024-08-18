@@ -385,7 +385,7 @@ loginForgetPassbtn.bind('<Enter>',on_enterdeliveredbtn)
 loginForgetPassbtn.bind('<Leave>',on_leavedeliveredbtn)
 
 def getGenderAbb(gender):
-        return "M" if gender == "Male" else "F"
+        return "M" if str(gender).lower() == "male" else "F"
 
 def openTop():
 

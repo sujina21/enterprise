@@ -23,13 +23,13 @@ def get_patient_responses():
         responses.append(response)
 
 
-    if str(responses[2]).lower() == "boy":
+    if str(responses[-3]).lower() == "boy":
         is_male = True
-    elif str(responses[2]).lower() == "girl":
+    elif str(responses[-3]).lower() == "girl":
         is_male = False
     else:
         is_male=True
-    responses[-1] = "male" if is_male else "female"
+    responses[-3] = "male" if is_male else "female"
     return responses
 
 def handle_existing_patient(patient):

@@ -131,10 +131,12 @@ def insert_or_update_patient(Id, Name, Age, Gender, Phone, Issue, VisitedTo):
             if existing_patient:
                 # Update existing patient record
                 query_update = rf"UPDATE Patient SET name = '{Name}', age = '{Age}', gender = '{Gender}', phone = '{Phone}', problem = '{Issue}', visited_to = '{VisitedTo}' WHERE patient_id = '{Id}'"
+                print(query_update)
                 cursor.execute(query_update)
             else:
                 # Insert new patient record
                 query_insert = rf"INSERT INTO Patient (patient_id, name, age, gender, phone, problem, visited_to) VALUES ('{Id}', '{Name}', '{Age}', '{Gender}', '{Phone}', '{Issue}', '{VisitedTo}')"
+                print(query_insert)
                 cursor.execute(query_insert)
             connection.commit()
         else:
